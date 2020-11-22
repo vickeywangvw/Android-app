@@ -1,0 +1,20 @@
+<?xml version='1/0' encoding='utf-8'?>
+<litepal>
+	<dbname value="DB4_Things" >
+
+	</dbname>
+
+	<version value='9' >
+
+	</version>
+
+	<list>
+		<mapping class="com.example.txy.tm.HelpClass.ThingInfo">
+		</mapping>
+		<mapping class="com.example.txy.tm.HelpClass.TomatoClk"></mapping>
+		<mapping class="com.example.txy.tm.HelpClass.RecordItem"></mapping>
+
+
+	</list>
+
+</litepal>

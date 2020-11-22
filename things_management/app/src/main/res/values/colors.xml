@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#04e6da</color>
+    <color name="colorPrimaryDark">#04e6da</color>
+    <color name="colorAccent">#4070ff</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="primary_light">#FFCDD2</color>
+    <color name="primary_text">#8d8d8d</color>
+    <color name="secondary_text">#727272</color>
+    <color name="divider">#FFFFFF</color>
+    <color name="text">#FFFFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#ececec</color>
+    <color name="tab_strip">#B42929</color>
+    <color name="black">#000000</color>
+    <color name="background">#f9f9f9</color>
+</resources>

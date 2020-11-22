@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.txy.tm.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn_play"
+        android:src="@drawable/art_card2"
+        app:border_width="1dp"
+        app:border_color="@color/black"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="名字"
+        android:shadowColor="#7e7e7e"
+        android:shadowRadius="5"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:id="@+id/tv_rd"
+        android:layout_below="@+id/btn_play"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

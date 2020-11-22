@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/methods_toma"
+    android:orderInCategory="100"
+    android:title="番茄工作法" />
+
+    <item
+        android:id="@+id/methods_today"
+        android:orderInCategory="100"
+        android:title="今日" />
+
+    <item
+        android:id="@+id/methods_list"
+        android:orderInCategory="100"
+        android:title="总列表" />
+</menu>

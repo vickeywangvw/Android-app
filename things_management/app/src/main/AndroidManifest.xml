@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.txy.tm">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="${applicationId}.provider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/filepaths"/>
+    </provider>
+
+
+    <service android:name=".RecordingService" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:label="日程管理"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FirstActivity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity.AddThingActivity" />
+        <activity
+            android:name=".FirstActivity.TomatoActivity"
+            android:label="番茄工作法"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SecondActivity.AddClockActivity"
+            android:label="番茄工作法"
+            android:windowSoftInputMode="adjustPan"  />
+        <activity android:name=".FirstActivity.FightActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="加油站"/>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".SecondActivity.TmtClockShowActivity"
+            android:label="番茄工作法"/>
+        <activity android:name=".SecondActivity.TimeActivity"
+            android:parentActivityName=".FirstActivity.TomatoActivity"
+            android:label="番茄工作法"
+            android:theme="@style/AppTheme.clock"/>
+        <activity android:name=".SecondActivity.IntervalActivity"
+            android:parentActivityName=".FirstActivity.TomatoActivity"
+            android:label="番茄工作法"
+            android:theme="@style/AppTheme.clock"/>
+
+        <service
+            android:name=".Recorder.RecordingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".SecondActivity.AddRecordActivity"
+            android:label="加油站"
+            ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.txy.tm.FirstActivity.MainActivity">
+    <item
+        android:id="@+id/todo_today"
+        android:orderInCategory="100"
+        android:title="今日"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/todo_everyday"
+        android:orderInCategory="100"
+        android:title="每日任务"
+        app:showAsAction="never" />
+    <item
+    android:id="@+id/todo_done"
+    android:orderInCategory="100"
+    android:title="已完成"
+    app:showAsAction="never" />
+</menu>
